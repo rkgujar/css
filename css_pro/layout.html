@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 2px;
+        }
+        header
+        {
+            background-color: grey;  
+            text-align: center;
+         padding:1px;
+         }
+              .nav{
+                background-color: black;
+                height: 50px;
+              }
+              aside{
+                float: left;
+                width: 23%;
+                padding: 3px;
+                
+              }
+              article{
+               float:inline-start ;
+                width: 39%;
+                padding: 3px;
+              }
+              section{
+               float: right;
+                width: 38%;
+                padding: 3px;
+
+              }
+              footer{
+                text-align: center;
+                background-color: grey;
+                padding: 3px;
+                display: block;
+                clear: both;
+              }
+              @media screen and (max-width:400px)
+              {
+                aside,section,article
+                {
+                    width:100%;
+
+                }
+
+                
+              }
+    </style>
+</head>
+<body>
+    <!-- semantic tag- to keep your content organized
+        <header>-intro content
+        <nav> - navigation bar, links
+        <main>- main content (section ,aside,article ,div)
+        <section> -dependent content
+        <aside> - side content
+        <article> - independent content
+        <footer> - closig content.
+     -->
+     <header>
+        <h1>ritesh</h1>
+     </header>
+
+     <nav class="nav">
+
+     </nav>
+
+     <main>
+        <aside>
+            <h2>this is h2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sit error fugit sed consequuntur! Voluptates ex ipsa, omnis explicabo fuga dolorum repellat tenetur pariatur dicta enim eveniet alias dignissimos!</p>
+        </aside>
+        <section>
+            <h2>this is section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt ut consequuntur dignissimos nisi voluptates laboriosam suscipit ducimus possimus commodi eius cum deleniti, dolorem error consectetur, accusantium repellendus asperiores! Tenetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt ut consequuntur dignissimos nisi voluptates laboriosam suscipit ducimus possimus commodi eius cum deleniti, dolorem error consectetur, accusantium repellendus asperiores! Tenetur?</p>
+        </section>
+
+         <article>
+            <h2>this is artical</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum veniam, dolorum iusto autem est error eum corrupti temporibus ullam fugit magnam, fugiat ipsam libero itaque voluptas incidunt! Accusamus, suscipit doloremque!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum veniam, dolorum iusto autem est error eum corrupti temporibus ullam fugit magnam, fugiat ipsam libero itaque voluptas incidunt! Accusamus, suscipit doloremque!</p>
+        </article>
+       
+     </main>
+     <footer>
+    <h2>Fotter Hia apan</h2>
+     </footer>
+
+    
+</body>
+</html>

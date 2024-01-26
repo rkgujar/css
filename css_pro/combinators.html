@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        .parent1{
+            border: 2px solid;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .parent1 p{
+            background-color: aqua;
+        }
+        .parent2{
+            border: 2px solid;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .parent2 > p{
+            background-color: aqua;
+        }
+        .parent3{
+            border: 2px solid;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .parent3 ~ p{
+            background-color: aqua;
+        }
+        .parent4{
+            border: 2px solid;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .parent4+p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- Combinators - explains relationship between 
+         div p - descendant - mean apply on all p emelent which under div. even if there are more div under that div .eg- paren1
+         div > p - child - means aplly on only child of that div not no other div inside that div eg-parent2  
+         div ~ p -general siblings -means apply on outside div sibilings mean other   outside div becoause ther are sibling div and p of body parent
+         div + p - adjecent siblings - same as general siblings but it considers only one which is next to div --> 
+
+    <div class="parent1"> 
+        <p>hello ji i am who?</p>
+        <p>hello ji i am who?</p>
+        <p>hello ji i am who?</p>
+        <div>
+            <p>who? i am</p>
+            <p>who? i am</p>
+        </div>
+        <p>yo yo ?</p>
+        <p>yo yo ?</p>
+    </div>
+    <p>i am sibiling of div container</p>
+    <p>i am sibiling of div container</p>
+    <div class="parent2"> 
+        <p>hello ji i am who?</p>
+        <p>hello ji i am who?</p>
+        <p>hello ji i am who?</p>
+        <div>
+            <p>who? i am</p>
+            <p>who? i am</p>
+        </div>
+        <p>yo yo ?</p>
+        <p>yo yo ?</p>
+    </div>
+    <p>i am sibiling of div container</p>
+    <p>i am sibiling of div container</p>
+    <div class="parent3"> 
+        <p>hello ji i am who?</p>
+        <p>hello ji i am who?</p>
+        <p>hello ji i am who?</p>
+        <div>
+            <p>who? i am</p>
+            <p>who? i am</p>
+        </div>
+        <p>yo yo ?</p>
+        <p>yo yo ?</p>
+    </div>
+    <p>i am sibiling of div container</p>
+    <p>i am sibiling of div container</p>
+
+    <div class="parent4"> 
+        <p>hello ji i am who?</p>
+        <p>hello ji i am who?</p>
+        <p>hello ji i am who?</p>
+        <div>
+            <p>who? i am</p>
+            <p>who? i am</p>
+        </div>
+        <p>yo yo ?</p>
+    </div>
+<!-- to see this just remove theparent 3 becuase it apply changes on these p also that whay it confusing -->
+    <p>i am sibiling of div container</p>
+    <p>i am sibiling of div </p>   
+</body>
+</html>

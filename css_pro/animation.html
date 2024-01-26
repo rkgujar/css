@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 300px;
+            font-size: 7em;
+            background-color: yellow;
+            text-align: center;
+            border: 2px solid;
+            animation-name:Animation ;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+           
+        }
+        .box:hover
+        {
+            animation-name:hoverr ;
+            animation-duration:10s;
+
+        }
+        .box:active
+        {
+            animation-name:activee ;
+            animation-duration:10s;
+
+        }
+
+        @keyframes Animation{
+            /* from -ith yaych ahe
+             to - ithun jayche ahe  */
+            
+             0%{
+                background-color: red;
+            }
+           20% {
+                background-color: yellow;
+            }
+            40% {
+                background-color: green;
+            }
+            60% {
+                background-color: grey;
+            }
+            80% {
+                background-color: blue;
+            }
+               
+               /* 
+               transform: translateX(300%);
+                transform: translateY(300%);
+                 transform: rotateX(360deg);
+                transform: rotateY(360deg);
+                transform: rotateZ(-360deg);
+                transform: scaleX(0.4);
+               transform: scaleY(0.4);
+               transform: scale(2,2);
+                transform: skewY(100deg);
+                transform: skewY(100deg);
+                transform: skewY(100deg , 100deg);
+                50% {
+                    opacity: 0%;
+                }
+                 0%{
+                    background-color: red;
+                }
+               20% {
+                    background-color: yellow;
+                }
+                40% {
+                    background-color: green;
+                }
+                60% {
+                    background-color: grey;
+                }
+                80% {
+                    background-color: blue;
+                }
+
+                 0%{
+                box-shadow: 2px 5px 5px red;
+               }
+               */
+ 
+            }
+            @keyframes hoverr{
+                from{
+                    transform:rotateZ(-360deg);
+                }
+            }
+            @keyframes activee{
+
+                 0%{
+                    background-color: red;
+                }
+               20% {
+                    background-color: yellow;
+                }
+                40% {
+                    background-color: green;
+                }
+                60% {
+                    background-color: grey;
+                }
+                80% {
+                    background-color: blue;
+                }
+            }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">Ritesh</div>
+</body>
+</html>

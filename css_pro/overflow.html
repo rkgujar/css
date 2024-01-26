@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        #d1{
+            border: 2px solid;
+            height: 100px;
+            margin-bottom: 80px;
+            overflow:visible;
+        }
+        #d2{
+            border: 2px solid;
+            height: 100px;
+            margin-bottom: 80px;
+            overflow: hidden;
+        }
+        #d3{
+            border: 2px solid;
+            height: 100px;
+            margin-bottom: 80px;
+            overflow: scroll;
+        }
+        #d4{
+            border: 2px solid;
+            height: 100px;
+            margin-bottom: 80px;
+            overflow: clip;
+            overflow-clip-margin:10px ;
+        }
+        #d5{
+            border: 2px solid;
+            height: 100px;
+            margin-bottom: 80px;
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- overflow property= used to set the behaviour of content when box can not fit that content and leads to overflow
+          overflow:visible - overflowed content will be visible
+          overflow:hidden  - overflowed content will be hidden
+          overflow:clip    -  in this we can diside how mush line of overflow are allowed using  overflow-clip-margin:10px ;.
+          overflow:scroll  - overflowed content will be visible  with fuctinality of scrolling.
+          overflow:auto    -  automatically desides what is perfect for this when re it will be scroll,visible. 
+           -->
+           <div id="d1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A cum vel neque temporibus ab corrupti magni dignissimos saepe, molestiae debitis ex earum maxime consectetur minus voluptas! Illo quae dicta accusamus provident. Blanditiis natus rerum quam itaque? Quam esse vel culpa accusamus enim officiis, eum dignissimos saepe natus eligendi ipsam! At.</p>
+           </div>
+           <div id="d2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A cum vel neque temporibus ab corrupti magni dignissimos saepe, molestiae debitis ex earum maxime consectetur minus voluptas! Illo quae dicta accusamus provident. Blanditiis natus rerum quam itaque? Quam esse vel culpa accusamus enim officiis, eum dignissimos saepe natus eligendi ipsam! At.</p>
+           </div>
+           <div id="d3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A cum vel neque temporibus ab corrupti magni dignissimos saepe, molestiae debitis ex earum maxime consectetur minus voluptas! Illo quae dicta accusamus provident. Blanditiis natus rerum quam itaque? Quam esse vel culpa accusamus enim officiis, eum dignissimos saepe natus eligendi ipsam! At.</p>
+           </div>
+           <div id="d4">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A cum vel neque temporibus ab corrupti magni dignissimos saepe, molestiae debitis ex earum maxime consectetur minus voluptas! Illo quae dicta accusamus provident. Blanditiis natus rerum quam itaque? Quam esse vel culpa accusamus enim officiis, eum dignissimos saepe natus eligendi ipsam! At.</p>
+           </div>
+           <div id="d5">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A cum vel neque temporibus ab corrupti magni dignissimos saepe, molestiae debitis ex earum maxime consectetur minus voluptas! Illo quae dicta accusamus provident. Blanditiis natus rerum quam itaque? Quam esse vel culpa accusamus enim officiis, eum dignissimos saepe natus eligendi ipsam! At.</p>
+           </div>
+    
+</body>
+</html>

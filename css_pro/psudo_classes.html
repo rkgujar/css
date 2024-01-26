@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+</head>
+<style>
+    body{
+       margin: 20px;
+
+    }
+    button{
+        background-color: black;
+        color: white;
+        border: 2px solid;
+        cursor: pointer;
+        height: 50px;
+        width: 100px;
+        border-radius: 10px;
+         
+    }
+    button:hover
+    {
+        transition: background-color 1s , color 1s;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    button:active
+    {
+        transition: background-color 0s , color 0s;
+        background-color: rgb(244, 37, 0);
+        color: rgb(0, 0, 0);
+    }
+    a:link{
+        color: rgb(1, 234, 247);
+
+    }
+    a:hover{
+        
+
+        color: brown;
+    }
+    a:active{
+        color: blue;
+    }
+    a:visited{
+       color: black;
+
+    }
+    li:hover{
+        background-color: yellow;
+    }
+    li:not(hover)
+    {
+        background-color: grey;
+    }
+
+    #l:nth-child(even)
+    {
+      background-color: red;
+    }
+    .v img{
+        
+        display: none;
+    }
+    .v:hover img{
+     
+       display: block;
+    }
+    
+</style>
+<!-- #l:nth-child(even) - 1 2 3 , even ,odd , 3n -for every third element also for 2 ,4,ans any no. -->
+<body>
+    <!-- hover - apply when cursor on that elemet 
+         active - apply when click 
+         visited - when we visit to that web of click then ot will show as different behaviour if we want
+         nth-child - see in exmple -->
+    <button>click</button> <br><br>
+    <a href="#">google</a>
+
+    <br><br>
+    <div style="height: 400px; width:400px; border:2px solid; background-color:bisque">
+        <ul>
+            <li>apple</li>
+            <li>orange</li>
+            <li>sitafal</li>
+            <li>dragonfruit</li>
+            <li>mango</li>
+            <li>watermelon</li>
+            <li>nothing</li>
+        </ul>
+    </div>
+    <br>
+    <div style="height: 400px; width:400px; border:2px solid; background-color:bisque">
+        <ul >
+            <li id="l">apple</li>
+            <li id="l">orange</li>
+            <li id="l">sitafal</li>
+            <li id="l">dragonfruit</li>
+            <li id="l">mango</li>
+            <li id="l">watermelon</li>
+            <li id="l">nothing</li>
+        </ul>
+    </div>
+    <br><br>
+    <div  class="v"  style="height: 400px; width:400px; border:2px solid;background-color: aqua; cursor:pointer;">
+       <center><img src="/images/happy.gif" height="300px" width="auto" style="padding-top: 40px;"></center>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo_selectors</title>
+    <style>
+        h1::first-letter
+        {
+            color: blue;
+            font-style: italic;
+            font-size: 100px;
+        }
+        p::first-line{
+            color: blue;
+            font-style: italic;
+           
+        }
+        p::selection
+        {
+            background-color: yellow;
+            color: red;
+        }
+        #f li::before{
+            content: "✔";
+        }
+        #a::after{
+          content: "🍎";
+        }
+        #o::after{
+            content: "🍊";
+          }
+        #b::after{
+            content: "🍌";
+          }
+          #f li::marker{
+            content: "✔";
+            color: rgb(18, 219, 18);
+            font-size: 1.2em;
+          }
+    </style>
+</head>
+<body>
+    <!-- pseudo_selector use to stype specific part of element -->
+    <h1>Ritesh</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut deserunt nulla non. Consequuntur quidem exercitationem quis fugit sapiente, dolorum vel nobis tenetur aperiam harum neque quibusdam sunt voluptatum autem.</p>
+
+    <ul id="f">
+        <li id="a">apple</li>
+        <li id="o">orange</li>
+        <li id="b">banana</li>
+    </ul>
+</body>
+</html>
